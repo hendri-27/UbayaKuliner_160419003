@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/imageFood"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textFoodName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Food Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageFood"
+                app:layout_constraintTop_toTopOf="@+id/imageFood" />
+
+            <ProgressBar
+                android:id="@+id/progressLoadingFoodPhoto"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageFood"
+                app:layout_constraintEnd_toEndOf="@+id/imageFood"
+                app:layout_constraintStart_toStartOf="@+id/imageFood"
+                app:layout_constraintTop_toTopOf="@+id/imageFood" />
+
+            <TextView
+                android:id="@+id/textFoodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="10.000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textFoodName"
+                app:layout_constraintTop_toBottomOf="@+id/textFoodName" />
+
+            <Button
+                android:id="@+id/buttonAddCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:text="Add to Cart"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/imageFood"
+                app:layout_constraintStart_toStartOf="@+id/imageFood"
+                app:layout_constraintTop_toBottomOf="@+id/imageFood" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQtyCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageFood"
+                app:layout_constraintStart_toStartOf="@+id/imageFood"
+                app:layout_constraintTop_toBottomOf="@+id/imageFood">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonDecreaseFIR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tint="#DC5959"
+                        app:srcCompat="@drawable/ic_outline_indeterminate_check_box_24" />
+
+                    <TextView
+                        android:id="@+id/textQtyFoodCounter"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="05dp"
+                        android:layout_marginEnd="05dp"
+                        android:gravity="center"
+                        android:maxLength="3"
+                        android:text="1"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/buttonIncreaseFIR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="#DC5959"
+                        app:srcCompat="@drawable/ic_baseline_add_box_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_ubayakuliner"
+    app:startDestination="@id/itemExplore">
+
+    <fragment
+        android:id="@+id/itemExplore"
+        android:name="com.ubaya.ubayakuliner_160419003.view.ListRestaurantFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_list_restaurant">
+        <action
+            android:id="@+id/actionDetailRestaurant"
+            app:destination="@id/detailRestaurantFragment" />
+        <action
+            android:id="@+id/actionProfileFragment"
+            app:destination="@id/itemProfile" />
+        <action
+            android:id="@+id/actionCartFragment"
+            app:destination="@id/itemCart" />
+        <action
+            android:id="@+id/actionListTransactionFragment"
+            app:destination="@id/itemHistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRestaurantFragment"
+        android:name="com.ubaya.ubayakuliner_160419003.view.DetailRestaurantFragment"
+        android:label="Restaurant"
+        tools:layout="@layout/fragment_detail_restaurant">
+        <argument
+            android:name="restaurant"
+            app:argType="com.ubaya.ubayakuliner_160419003.model.Restaurant" />
+        <action
+            android:id="@+id/actionListReviewFragment"
+            app:destination="@id/listReviewFragment" />
+        <action
+            android:id="@+id/actionItemCart"
+            app:destination="@id/itemCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/listReviewFragment"
+        android:name="com.ubaya.ubayakuliner_160419003.view.ListReviewFragment"
+        android:label="Reviews"
+        tools:layout="@layout/fragment_list_review">
+        <argument
+            android:name="restaurantId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.ubaya.ubayakuliner_160419003.view.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout">
+        <argument
+            android:name="cart"
+            app:argType="com.ubaya.ubayakuliner_160419003.model.Cart[]" />
+        <argument
+            android:name="subtotal"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemCart"
+        android:name="com.ubaya.ubayakuliner_160419003.view.CartFragment"
+        android:label="My Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/actionCheckoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTransactionFragment"
+        android:name="com.ubaya.ubayakuliner_160419003.view.DetailTransactionFragment"
+        android:label="My Transaction"
+        tools:layout="@layout/fragment_detail_transaction" >
+        <argument
+            android:name="transaction"
+            app:argType="com.ubaya.ubayakuliner_160419003.model.Transaction" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.ubaya.ubayakuliner_160419003.view.ProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/itemHistory"
+        android:name="com.ubaya.ubayakuliner_160419003.view.ListTransactionFragment"
+        android:label="My History"
+        tools:layout="@layout/fragment_list_transaction">
+        <action
+            android:id="@+id/actionDetailTransactionFragment"
+            app:destination="@id/detailTransactionFragment" />
+        <action
+            android:id="@+id/actionAddReviewFragment"
+            app:destination="@id/addReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReviewFragment"
+        android:name="com.ubaya.ubayakuliner_160419003.view.AddReviewFragment"
+        android:label="Rate Food"
+        tools:layout="@layout/fragment_add_review" >
+        <argument
+            android:name="transaction"
+            app:argType="com.ubaya.ubayakuliner_160419003.model.Transaction" />
+    </fragment>
+</navigation>

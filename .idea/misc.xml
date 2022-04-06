@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.136" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/activity_main2.xml" value="0.2708333333333333" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/cart_list_item.xml" value="0.2708333333333333" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/detail_transaction_item.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/food_list_item.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_add_review.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_cart.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_checkout.xml" value="0.25" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_detail_restaurant.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_detail_transaction.xml" value="0.25" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_favourite_food.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_list_restaurant.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_list_review.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_list_transaction.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_list_voucher.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/myspinner_item_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/myspinner_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/restaurant_list_item.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/review_list_item.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/layout/transaction_list_item.xml" value="0.33" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/menu/menu_bottom.xml" value="0.27291666666666664" />
+        <entry key="..\:/Hendri/kuliah/semester6/ANMP_A/UbayaKuliner_160419003/app/src/main/res/menu/menu_side.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
